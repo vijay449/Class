@@ -1,0 +1,33 @@
+class Animal():
+
+  def __init__(self):
+    print('Animal created')
+
+  ## these are methods 
+  def who_am_i(self):
+    print('I am an animal')
+  
+  def eat(self):
+    print('I am eating!')
+
+
+class Dog(Animal):
+
+  def __init__(self):
+    Animal.__init__(self)
+    print('Dog created')
+  
+  # all the methods of the Animal class are now available for Dog class 
+  # The methods of the animal class can be over-written from here 
+
+  def who_am_i(self):
+    print('I am a Dog')
+    
+  def bark(self):
+    print('WOOF!!')
+  
+myani = Animal()
+mydog = Dog()
+myani.who_am_i()
+mydog.who_am_i()
+mydog.eat()
