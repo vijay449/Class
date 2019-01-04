@@ -1,0 +1,28 @@
+class Dog():
+
+  # class object attributes - same for any instance of the class
+  species = 'mammies'
+
+  def __init__(self,breed,name):
+    self.breed = breed 
+    self.name  = name 
+
+  # operations / actions = Method 
+  # Method is nothing but a function in a class 
+  def bark(self):
+    print(f'woof!! my dog name is {self.name}')
+  
+
+mydog = Dog('Lab', 'Pinky')
+print (f'My dog breed is {mydog.breed}')
+print (f'My dog name is {mydog.name}')
+print (f'My dog species is {mydog.species}')
+
+mydog1 = Dog('Turkey', 'Sweety')
+print (f'My dog breed is {mydog1.breed}')
+print (f'My dog name is {mydog1.name}')
+print (f'My dog species is {mydog1.species}')
+
+mydog.bark()
+mydog1.bark()
+
